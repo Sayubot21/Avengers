@@ -10,7 +10,7 @@ const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./safeer/');
+const {Message, StringSession, Image, Video} = require('./sayooj/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
@@ -133,7 +133,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Supersmart working!')
+            chalk.green.bold('✅ Avengers working!')
         );
     });
     
@@ -258,7 +258,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ Supersmart ~______~*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ Avengers ~______~*' +
                                     
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
